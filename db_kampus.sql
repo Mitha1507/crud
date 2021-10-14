@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Okt 2021 pada 07.58
+-- Waktu pembuatan: 14 Okt 2021 pada 06.42
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 7.3.27
 
@@ -32,16 +32,17 @@ CREATE TABLE `mahasiswa` (
   `nim` varchar(8) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `alamat` text NOT NULL,
-  `pekerjaan` varchar(50) NOT NULL
+  `pekerjaan` varchar(50) NOT NULL,
+  `foto` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `mahasiswa`
 --
 
-INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `alamat`, `pekerjaan`) VALUES
-(1, 'm', 'm', 'm', 'm'),
-(2, '12201296', 'Mitha Silviana', 'Kp.Gadog', 'Mahasiswa');
+INSERT INTO `mahasiswa` (`id`, `nim`, `nama`, `alamat`, `pekerjaan`, `foto`) VALUES
+(2, '12201296', 'Mitha', 'Kp.Gadog', 'Mahasiswa', ''),
+(7, '12201296', 'Mitha l', 'tsk', 'pns', 'images/me.jpeg');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +62,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
